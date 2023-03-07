@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: node-express-hello-wvjm
+  namespace: samburrai-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:c3d5801e46e5756d2264e14aa9e88e10a0918bd5a51ab672f06d032ece5f05d5
+        name: my-nodejs
+        resources: {}
+status: {}
